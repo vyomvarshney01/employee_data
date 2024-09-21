@@ -12,11 +12,11 @@ let server;
 
 beforeAll(async () => {
   server = http.createServer(app);
-  server.listen(3001, done);
+  server.listen(3001);
 });
 
 afterAll(async () => {
-  server.close(done);
+  server.close();
 });
 
 describe('Controller Function tests', () => {
